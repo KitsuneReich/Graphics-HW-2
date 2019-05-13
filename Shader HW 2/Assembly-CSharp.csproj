@@ -60,9 +60,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\CreateMeshSimple.cs" />
     <Compile Include="Assets\RenderEffectBloom.cs" />
-    <None Include="Assets\Phong - Outline.shader" />
-    <None Include="Assets\Bloom.shader" />
+    <None Include="Assets\Shaders\Phong - Outline.shader" />
+    <None Include="Assets\Shaders\Bloom.shader" />
+    <None Include="Assets\Shaders\Reflection.shader" />
+    <None Include="Assets\Shaders\HillFromTexture.shader" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/FOXDIE/Documents/CMPM 163/HW2/Shader HW 2/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>

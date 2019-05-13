@@ -8,4 +8,4 @@ A scene in Unity which has a bloom filter applied to the main camera, causing a 
 
 ## Part B
 ![Part A Screenshot](Images/Part%20B.png)
-An outdoor scene in Unity which procedurally increases the size of a plane mesh and then uses a shader to deform the plane according to a heightmap image. Separate textures are then applied to the mesh within this shader to create different terrain zones on the deformed plane. In addition, there is a cubemap skybox encasing the scene which is reflected by the plane representing water. 
+An outdoor scene in Unity which procedurally increases the size of a plane mesh and then uses a shader to deform the plane according to a heightmap image. Separate textures are then applied to the mesh within this shader to create different terrain zones on the deformed plane. In addition, there is a cubemap skybox encasing the scene which is reflected by the plane representing water. Currently, the amount of displacement from the heightmap can be adjusted in the HillFromTexture shader. Additionally, a color can be adjusted within the Reflection shader to add a colorful tint to the water. 

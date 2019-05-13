@@ -2,6 +2,8 @@
     Properties {
       
       _Cube ("Cubemap", CUBE) = "" {}
+      _Color ("Color", Color) = (1, 1, 1, 1) //The color of our object
+
     }
      SubShader
     {
@@ -12,6 +14,9 @@
             #pragma fragment frag
 
             #include "UnityCG.cginc"
+            
+            uniform float4 _Color; 
+
             
              
             struct appdata
@@ -73,7 +78,7 @@
              float4 refractColor = float4(refractColorRed.r, refractColorGreen.g, refractColorBlue.b, 1.0);
              
              
-             return float4(lerp(reflectColor, refractColor, 0.5).rgb, 1.0);
+             return float4(lerp(reflectColor, refractColor, 0.5).rgb + _Color.rgb, 1.0);
                 
                 
             }
